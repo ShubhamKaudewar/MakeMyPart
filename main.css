@@ -1,0 +1,310 @@
+/* IBM Fonts */
+@font-face {
+    font-family: ibmplexsans-light;
+    src: url(./assets/fonts/ibmplexsans-light.woff2);
+}
+@font-face {
+    font-family: ibmplexsans-regularitalic;
+    src: url(./assets/fonts/ibmplexsans-regularitalic.woff2);
+}
+@font-face {
+    font-family: ibmplexsans-semibold;
+    src: url(./assets/fonts/ibmplexsans-semibold.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ibmplexsans-light;
+}
+.color{
+    color: #61892F;
+    color: #86c232;
+    color: #222629;
+    color: #474B4F;
+    color: #6B6E70;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    background-color: #222629;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 3px 5px white;
+    height: 10vh;
+}
+.navLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navLogoDesc{
+    font-size: 0.7rem;
+}
+.navSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.navSection>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+/* homepage */
+.sectionOne{
+    height: 100vh;
+    background: linear-gradient(rgba(34, 38, 41,0.9),rgba(17, 31, 41, 0.9)),url('./assets/main.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.homeTitle{
+    color: #ffffff;
+    font-size: 7rem;
+    text-align: center;
+    font-family: ibmplexsans-semibold;
+}
+.homeQuote{
+    padding-top: 10vh;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    font-family: ibmplexsans-light;
+}
+.homeDesc{
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: ibmplexsans-regularitalic;
+}
+.homeFeatures{
+    padding-top: 10vh;
+    color: #ffffff;
+    font-size: 2rem;
+}
+.homeFeatures{
+    display: flex;
+    flex-direction: column;
+}
+.homeFeatures>li{
+    text-align: right;
+    background-color: white;
+    color: #222629;
+    width: 30%;
+    font-size: 1.7rem;
+    list-style-type: none;
+    margin: 5px 0px 5px 0px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* AIM */
+.sectionTwo{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: #222629;
+    justify-content: space-evenly;
+    padding: 5vh 0 5vh 0;
+    border-bottom: 5px solid black;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.aimInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.aimTitle{
+    font-size: 3rem;
+    font-family: ibmplexsans-semibold;
+}
+.aimDesc{
+    font-size: 1.3rem;
+}
+.aimImg{
+    text-align: center;
+}
+.aimImg>img{
+    border-radius: 20px;
+    width: 60%;
+}
+
+
+/* Product */
+.sectionThree{
+    min-height: 95vh;
+    height: auto;
+    background-color: rgba(211, 211, 211, 0.253);
+}
+.productTitle{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: ibmplexsans-semibold;
+    color: rgba(34, 38, 41);
+    border-bottom: 2px solid rgba(34, 38, 41);
+    margin-bottom: 3rem;
+}
+.productCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+.productCard{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    justify-content: space-evenly;
+    color: black;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+
+.productCard:nth-of-type(2n){
+    margin-left: 5%;
+}
+.productCard:nth-of-type(2n+1){
+    margin-left: 55%;
+}
+.productImg>img{
+    margin-left: -20%;
+    width: 100%;
+    height: 40vh;
+}
+.productName{
+    padding-top: 1rem;
+    font-size: 1.7rem;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: ibmplexsans-semibold;
+}
+
+/* How it works */
+.sectionFour{
+    display: flex;
+    flex-direction: column;
+}
+.hiwTitle{
+    text-align: center;
+    font-size: 3rem;
+    font-family: ibmplexsans-semibold;
+    padding-top: 3rem;
+}
+.hiwCard{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 0 5vh 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+.hiwInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 1rem;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px black;
+}
+.hiwInfo>div:first-child>img{
+    margin: 1rem;
+    width: auto;
+    height: 50vh;
+}
+.hiwInfo>div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: ibmplexsans-semibold;
+}
+.hiwInfo:nth-of-type(1){
+    background-color: rgba(255, 251, 0, 0.5);
+}
+.hiwInfo:nth-of-type(2){
+    background-color: rgba(0, 183, 255, 0.5);
+}
+.hiwInfo:nth-of-type(3){
+    background-color: rgba(196, 6, 6, 0.5);
+}
+.hiwInfo:nth-of-type(4){
+    background-color: rgba(0, 38, 255, 0.5);
+}
+.hiwInfo:nth-of-type(5){
+    background-color: rgba(0, 180, 105, 0.5);
+}
+
+/* Meet The TEam */
+.sectionFive{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(17, 31, 41, 0.9);
+    height: 100vh;
+    margin-top: 5vh;
+    background-color: rgba(211, 211, 211, 0.253);
+}
+.teamTitle{
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-family: ibmplexsans-semibold;
+    padding-bottom: 1rem;
+}
+.teamDesc{
+    font-size: 1.7rem;
+    width: 80%;
+    margin: 0 10% 10vh 10%;
+}
+.teamCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0rem 5% 0 5%;
+}
+.teamCard{
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px black;
+    margin: 1rem;
+    border-radius: 15px;
+}
+.teamImg>img{
+    width: auto;
+    height: 20vh;
+}
+.teamPosition{
+    font-size: 1.7rem;
+    font-family: ibmplexsans-semibold;
+}
+.teamAbout{
+    font-size: 1rem;
+}
