@@ -23,7 +23,9 @@
     color: #474B4F;
     color: #6B6E70;
 }
-
+.navbarMobile{
+    display: none;
+}
 /* Navbar */
 nav{
     display: flex;
@@ -177,8 +179,6 @@ nav{
     box-shadow: 0px 0px 10px black;
 }
 
-
-
 .productCard:nth-of-type(2n){
     margin-left: 5%;
 }
@@ -307,4 +307,112 @@ nav{
 }
 .teamAbout{
     font-size: 1rem;
+}
+
+@media screen and (max-device-width:500px), screen and (max-width:500px){
+    .navbarDesktop{
+        display: none;
+    }
+    .animatable{
+        display: none;
+    }
+
+    /* Home Page */
+    .sectionOne{
+        height: 110vh;
+        background-repeat: no-repeat;
+        background-repeat: repeat;
+        background-position: unset;
+        background-size: unset;
+    }
+    .homeInfo{
+        width: 80%;
+        margin-left: 10%;
+        height: 30vh;
+    }
+    .homeTitle{
+        font-size: 2.1rem;
+    }
+    .homeQuote{
+        font-size: 1.3rem;
+        padding-top: 7rem;
+    }
+    .homeDesc{
+        font-size: 1rem;
+    }
+    .homeFeatures{
+        padding-top: 11rem;
+    }
+    .homeFeatures>li{
+        width: 50%;
+        font-size: 1rem;
+    }
+    .sectionTwo{
+        flex-direction: column-reverse;
+    }
+
+    /* Aim */
+    .aimInfo{
+        padding: 0;
+        text-align: center;
+    }
+    .aimTitle{
+        font-size: 1.7rem;
+    }
+    .aimDesc{
+        font-size: 1.1rem;
+    }
+    .aimImg>img {
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+
+    /* Product */
+    .productTitle{
+        font-size: 2rem;
+    }
+    .productCard{
+        width: 80%;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0px;
+    }
+    .productCard:nth-of-type(2n){
+        margin: 2rem 0 2rem 10%;
+    }
+    .productCard:nth-of-type(2n+1){
+        margin: 2rem 0 2rem 10%;
+    }
+    .productImg>img{
+        margin-left: 0%;
+    }
+    .productName{
+        padding-bottom: 1rem;
+    }
+
+    /* How it works */
+    .hiwInfo{
+        width: 70%;
+    }
+    .hiwInfo>div:first-child>img {
+        width: 50vw;
+        height: 30vh;
+    }
+
+    /* Team Page */
+    .sectionFive{
+        height: auto;
+    }
+    .teamDesc{
+        font-size: 1.2rem;
+    }
+    .teamCards{
+        flex-direction: column;
+    }
+    .teamCard{
+        width: 80%;
+        padding: 0;
+        margin: 2rem 10% 2rem 10%;
+        height: 50vh;
+    }
 }
