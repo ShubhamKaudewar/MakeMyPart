@@ -1,0 +1,285 @@
+/* IBM Fonts */
+@font-face {
+    font-family: ibmplexsans-light;
+    src: url(../assets/fonts/ibmplexsans-light.woff2);
+}
+@font-face {
+    font-family: ibmplexsans-regularitalic;
+    src: url(../assets/fonts/ibmplexsans-regularitalic.woff2);
+}
+@font-face {
+    font-family: ibmplexsans-semibold;
+    src: url(../assets/fonts/ibmplexsans-semibold.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ibmplexsans-light;
+}
+
+/* Navbar */
+
+.navbarMobile{
+    display: none;
+}
+/* Navbar */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    background-color: #222629;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 3px 5px white;
+    height: 10vh;
+}
+.navLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navLogoDesc{
+    font-size: 0.7rem;
+}
+.navSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.navSection>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Section One */
+.faqHome{
+    height: 60vh;
+    background-image: url('./FAQ.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.faqTitle{
+    padding: 10rem 0 0 5rem;
+    font-size: 5rem;
+    color: white;
+    font-family: ibmplexsans-semibold;
+}
+
+.faqInfo{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(0,0,0,0.05);
+}
+.faqCard{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.faqNo{
+    font-size: 1.7rem;
+    font-family: ibmplexsans-semibold;
+}
+.faqQuote{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+}
+
+/* Section Three */
+.faqAbout{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(0,0,0,0.02);
+}
+.faqAboutCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.faqMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.07);
+}
+.faqName{
+    font-size: 1.7rem;
+    font-family: ibmplexsans-semibold;
+    color: black;
+}
+.faqDesc{
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.7);
+    padding-top: 1rem;
+}
+.faqAboutImg{
+    text-align: center;
+}
+.faqAboutImg>img{
+    width: 100%;
+}
+.faqButton{
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.7);
+    width: fit-content;
+    margin-top: 1rem;
+}
+.faqButton>a{
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-size: 1.3rem;
+}
+
+/* Footer */
+footer{
+    margin-top: 2rem;
+    background-color: rgba(0,0,0,0.2);
+}
+.footerTitle{
+    color: black;
+    font-family: ibmplexsans-light;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+
+@media screen and (max-device-width:500px), screen and (max-width:500px){
+    .navbarDesktop{
+        display: none;
+    }
+    .animatable{
+        display: none;
+    }
+
+    /* Secction One */
+    .faqHome{
+        background-size: 160%;
+    }
+    .faqTitle{
+        padding: 18rem 0 0 1rem;
+        font-size: 3rem;
+    }
+
+    /* Section Two */
+    .faqInfo{
+        width: 90%;
+        padding: 0 5% 0 5%;
+    }
+    .faqNo{
+        font-size: 1.4rem;
+    }
+    .faqQuote{
+        font-size: 1.2rem;
+    }
+    .faqCard{
+        padding: 1rem;
+    }
+
+    /* Secction Three */
+    .faqAbout{
+        width: 90%;
+        padding: 0 5% 0 5%;
+    }
+    .faqAboutCard{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .faqName{
+        font-size: 1.5rem;
+        padding: 0rem;
+    }
+    .faqDesc{
+        font-size: 1.2rem;
+    }
+    .faqButton{
+        padding: 0.5rem;
+    }
+
+    /* Footer */
+    .footerTitle{
+        font-size: 1.3rem;
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+
+@media screen and (max-device-width:350px), screen and (max-width:350px){
+    .navbarDesktop{
+        display: none;
+    }
+    .animatable{
+        display: none;
+    }
+
+    /* Secction One */
+    .faqHome{
+        background-size: 185%;
+    }
+    .faqTitle {
+        padding: 19rem 0 0 1rem;
+        font-size: 2.5rem;
+    }
+
+    /* Section Two */
+    .faqInfo{
+        width: 90%;
+        padding: 0 5% 0 5%;
+    }
+    .faqNo{
+        font-size: 1.2rem;
+    }
+    .faqQuote{
+        font-size: 1rem;
+    }
+    .faqCard{
+        padding: 1rem;
+    }
+
+    /* Secction Three */
+    .faqAbout{
+        width: 100%;
+        padding: 0 0% 0 0%;
+    }
+    .faqAboutCard{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .faqName{
+        font-size: 1.5rem;
+        padding: 0rem;
+    }
+    .faqDesc{
+        font-size: 1.1rem;
+    }
+    .faqButton{
+        padding: 0.5rem;
+    }
+    .faqMore{
+        padding: 1rem;
+    }
+
+    /* Footer */
+    .footerTitle{
+        font-size: 1.3rem;
+        padding: 2rem 0 2rem 0;
+    }
+}
