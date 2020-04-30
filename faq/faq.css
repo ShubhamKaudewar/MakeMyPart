@@ -172,7 +172,8 @@ footer{
 
     /* Secction One */
     .faqHome{
-        background-size: 160%;
+        background-size: 200%;
+        background-position: -20rem;
     }
     .faqTitle{
         padding: 18rem 0 0 1rem;
@@ -232,10 +233,11 @@ footer{
 
     /* Secction One */
     .faqHome{
-        background-size: 185%;
+        background-size: 230%;
+        background-position: -22rem;
     }
     .faqTitle {
-        padding: 19rem 0 0 1rem;
+        padding: 18rem 0 0 1rem;
         font-size: 2.5rem;
     }
 
