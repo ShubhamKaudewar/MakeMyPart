@@ -173,6 +173,7 @@ footer{
     /* Secction One */
     .serviceHome{
         background-size: 160%;
+        height: auto;
     }
     .serviceTitle{
         padding: 18rem 0 0 1rem;
@@ -233,6 +234,7 @@ footer{
     /* Secction One */
     .serviceHome{
         background-size: 185%;
+        height: auto;
     }
     .serviceTitle {
         padding: 19rem 0 0 1rem;
