@@ -309,6 +309,20 @@ nav{
     font-size: 1rem;
 }
 
+
+/* Footer */
+footer{
+    margin-top: 2rem;
+    background-color: rgba(0,0,0,0.2);
+}
+.footerTitle{
+    color: black;
+    font-family: ibmplexsans-light;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
 @media screen and (max-device-width:500px), screen and (max-width:500px){
     .navbarDesktop{
         display: none;
@@ -414,5 +428,10 @@ nav{
         padding: 0;
         margin: 2rem 10% 2rem 10%;
         height: 50vh;
+    }
+    /* Footer */
+    .footerTitle{
+        font-size: 1.3rem;
+        padding: 2rem 0 2rem 0;
     }
 }
