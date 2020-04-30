@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ</title>
+    <title>MakeMyPart</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.jpg" sizes="160x160" type="image/png"/>
+    <!-- Meta data -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MakeMyPart" />
+    <meta property="og:title" content="MakeMyPart" />
+    <meta name="og:description" content="Official Website of MakeMyPart"/>
+    <meta property="og:image" content="http://makemypart.in/assets/metaImg.png"/>
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="450" />
+    <meta property="og:url" content="http://makemypart.in/index.html">
+
+    <!-- CSS Attached -->
     <link rel="stylesheet" href="main.css">
 
     <!-- Animation -->
     <link rel="stylesheet" href="./scroll/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Navbar Mobile -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./common/navbarMobile/style.css">
+    <script src="./common/jquery/common.js"></script>
+
 </head>
 <body>
     <nav class="navbarDesktop">
@@ -25,6 +46,9 @@
             <a href="./faq/index.html">FAQ</a>
         </div>
     </nav>
+
+    <!-- Navbar Mobile -->
+    <div w3-include-html="./common/navbarMobile/index.html"></div>
 
     <!-- Homepage -->
     <section class="sectionOne" id="home">
@@ -164,9 +188,14 @@
             Copyright © 2020 MakeMyPart
         </div>
     </footer>
-    
+
     <script src="./common/jquery/jquery.min.js"></script>
     <script src="./scroll/script.js"></script>
     <script src="./smoothScroll/script.js"></script>
+    <script src="./common/navbarMobile/script.js"></script>
 </body>
+<script>
+    includeNav();
+    includeHTML();
+  </script>
 </html>
