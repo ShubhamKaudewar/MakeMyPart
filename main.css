@@ -337,6 +337,11 @@ footer{
     .navigation{
         display: initial;
     }
+    .navigation>div{
+        z-index: 200;
+        position: sticky;
+        top: 0;
+    }
 
     /* Home Page */
     .sectionOne{
