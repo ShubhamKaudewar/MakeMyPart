@@ -2,7 +2,9 @@
 .topnav {
   background-color: #333;
 }
-
+.active{
+  display: none;
+}
 .topnav a {
   float: left;
   display: block;
@@ -20,12 +22,12 @@
 
 .topnav a.active {
   background-color: #ffffff;
+  display: none;
   color: black;
 }
-
 .topnav .icon {
   display: none;
-  border: 2px solid white;
+  border: 2px solid black;
   background-color: white;
   color: black;
 }

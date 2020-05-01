@@ -19,7 +19,7 @@
 
 /* Navbar */
 
-.navbarMobile{
+.navigation{
     display: none;
 }
 /* Navbar */
@@ -169,6 +169,14 @@ footer{
     .animatable{
         display: none;
     }
+    .navigation{
+        display: initial;
+    }
+    .navigation>div{
+        z-index: 200;
+        position: sticky;
+        top: 0;
+    }
 
     /* Secction One */
     .faqHome{
@@ -230,6 +238,14 @@ footer{
     }
     .animatable{
         display: none;
+    }
+    .navigation{
+        display: initial;
+    }
+    .navigation>div{
+        z-index: 200;
+        position: sticky;
+        top: 0;
     }
 
     /* Secction One */
