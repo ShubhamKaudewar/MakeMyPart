@@ -1,0 +1,58 @@
+
+/* Navbar */
+
+.navigation{
+    display: none;
+}
+/* Navbar */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    background-color: #222629;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 3px 5px white;
+    height: 10vh;
+}
+.navLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navLogoDesc{
+    font-size: 0.7rem;
+}
+.navSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.navSection>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-device-width:500px), screen and (max-width:500px){
+    .navbarDesktop{
+        display: none;
+    }
+    .animatable{
+        display: none;
+    }
+    .navigation{
+        display: initial;
+    }
+    .navigation>div{
+        z-index: 200;
+        position: sticky;
+        top: 0;
+    }
+}

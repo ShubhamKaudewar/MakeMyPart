@@ -1,0 +1,81 @@
+/* IBM Fonts */
+@font-face {
+    font-family: ibmplexsans-light;
+    src: url(../assets/fonts/ibmplexsans-light.woff2);
+}
+@font-face {
+    font-family: ibmplexsans-regularitalic;
+    src: url(../assets/fonts/ibmplexsans-regularitalic.woff2);
+}
+@font-face {
+    font-family: ibmplexsans-semibold;
+    src: url(../assets/fonts/ibmplexsans-semibold.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ibmplexsans-light;
+}
+body{
+    background-color: rgba(0,0,0,0.05);
+    text-align: center;
+}
+.container{
+    height: 80vh;
+    padding-top: 20vh;
+}
+.tick{
+    font-size: 4rem;
+    color: rgb(55, 173, 55);
+}
+.tick>i{
+    padding: 1rem;
+    border: 2px solid rgb(55, 173, 55);
+    border-radius: 5rem;
+}
+.title{
+    font-size: 5rem;
+    font-family: ibmplexsans-semibold;
+    color: rgba(0,0,0,0.7);
+}
+.message{
+    font-size: 2rem;
+}
+.button{
+    margin: 2rem;
+}
+.button>a{
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: rgb(55, 173, 55);
+    border-radius: 10px;
+    color: white;
+    transition: 500ms;
+    text-decoration: none;
+    transform: scale(1.0);
+}
+.button>a:hover{
+    background-color: rgba(55, 173, 55,0.7);
+}
+.back>a{
+    text-transform: none;
+    font-family: ibmplexsans-semibold;
+    text-decoration: none;
+}
+
+@media screen and (max-device-width:500px), screen and (max-width:500px){
+    .tick{
+        font-size: 3rem;
+    }
+    .tick>i{
+        padding: 0.8rem;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .message{
+        font-size: 1.3rem;
+        width: 70%;
+        padding-left: 15%;
+    }
+}
